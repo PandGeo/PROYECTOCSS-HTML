@@ -10,13 +10,22 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: "Tillium Web", sans-serif;
-
 }
 body{
     min-height: 100vh;
-    background: url(903680-free-elsword-season-2-wallpapers-2551x1276.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .header{
     position: fixed;
@@ -51,7 +60,7 @@ body{
     left: 0;
     width: 0px;
     height: 2px;
-    background:#fff;
+    background:#869D7A;
     transition: .3s;
 }
 
