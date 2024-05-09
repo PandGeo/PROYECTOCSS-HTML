@@ -11,22 +11,6 @@
     box-sizing: border-box;
     font-family: "Tillium Web", sans-serif;
 }
-body{
-    min-height: 100vh;
-}
-.container{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-}
-.background{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 .header{
     position: fixed;
     top: 0;
@@ -67,6 +51,31 @@ body{
 .navbar a:hover:before{
     width: 100%;
 }
+body{
+    min-height: 100vh;
+}
+
+/* Fondo */
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    position: absolute;
+}
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 /*
 .container{
