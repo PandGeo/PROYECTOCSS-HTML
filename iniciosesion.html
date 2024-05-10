@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bttn.css">
+    <title>Inicio</title>
+</head>
+<body onclick="PlayAudio()">
+    <header class="header">
+        <a href="#" class="logo">
+            Yue
+        </a>
+        <nav class="navbar">
+            <a href="#">Lore</a>
+            <a href="#">Foro</a>
+            <a href="#">Reglas</a>
+            <a href="#">Ayuda</a>
+        </nav>
+        </header> 
+    <div class="container">
+        <video autoplay muted loop class="background">
+            <source src="furina-smiling-genshin-impact-moewalls-com.mp4">
+        </video>
+        <div class="content">
+            <audio id="musica" controls loop autoplay>
+                <source src="Lost in the Echoes (3).mp3" type="audio/mpeg">
+            </audio>
+            <div class="middle">
+                <a href="index.html"><button class="btn btn1" id="font">Jugar Ahora</button></a>
+            </div>
+            
+        </div>
+    </div>    
+    
+
+<section>
+    <script>
+        function PlayAudio(){
+            document.getElementById("musica").play();
+            }
+         window.onload = function(){
+            document.getElementById("musica").play();
+            }
+        </script>
+</section>
+
+</body>
+</html>
+
+
+<!--
+
+    button{
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 6px;
+    background: #7d2ae8
+    transition: all 0.2s ease;
+
+    }
+    button:active{
+        transform: scale(0.96)
+    }
+-->

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 32px;
+    color:#FFC4D1;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #FFC4D1;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left:40px;
+}
+.navbar a::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 2px;
+    background:#F1DAC4;
+    transition: .3s;
+}
+
+.navbar a:hover:before{
+    width: 100%;
+}
+body{
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    position: absolute;
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.middle{
+    margin-top: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.btn{
+    color:#E072A4;
+    border-radius: 10%;
+    background-color: transparent;
+    border: 1px solid #E072A4;
+    font-family: "monserrat", sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transition: color  0.4s linear;
+    position: relative;
+}
+.btn:hover{
+    color: #F3D3BD;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    z-index: -1;
+    transition: transform 0.5;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+.btn1::before{
+    transform: scaleX(0);
+}
+.btn1:hover:before{
+    transform: scaleX(1);
+}
+
+#musica{
+    position: relative;
+    text-align: center;
+    z-index: -1;
+}
